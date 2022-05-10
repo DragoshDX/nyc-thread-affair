@@ -1,3 +1,5 @@
+import HomeNewsletter from './homepage/home-newsletter';
+
 export default function Main() {
   return (
     <main className="content">
@@ -30,9 +32,9 @@ export default function Main() {
           </footer>
         </section>
 
-        <section className="home-newsletter"></section>
+        <HomeNewsletter></HomeNewsletter>
 
-        <section className="home-payment">
+        <section className="home-payment container">
           <header>
             <h1 className="section-title">
               <span>How to</span> Pay
@@ -45,7 +47,7 @@ export default function Main() {
             </li>
 
             <li>
-              <img src="/images/payment/amazon.jpg" alt=""></img>
+              <img src="/images/payment/cirrus.jpg" alt=""></img>
             </li>
 
             <li>
