@@ -5,25 +5,31 @@ export default function Main() {
     <main className="content">
       <header className="content-header">
         <div className="banner-main">
-          <div className="banner-info">
-            <h1>Office Suits</h1>
-            <h2>Get back to work in style</h2>
+          <div className="banner-main-inner container">
+            <div className="banner-info">
+              <h1>Office Suits</h1>
+              <h2>Get back to work in style</h2>
 
-            <a href="" title="Create your suit" className="button button-large">
-              Create your suit
-            </a>
-          </div>
+              <a
+                href=""
+                title="Create your suit"
+                className="button button-large"
+              >
+                Create your suit
+              </a>
+            </div>
 
-          <div className="banner-copy">
-            <p>
-              <span>A tailored suit</span>
-              that will fit you perfectly is a dream for everybody.
-            </p>
+            <div className="banner-copy">
+              <p>
+                <span>A tailored suit</span>
+                that will fit you perfectly is a dream for everybody.
+              </p>
 
-            <p className="d-none d-lg-block">
-              We provide you with the design and you choose if you like it or if
-              you want to change the details with our online configurator.
-            </p>
+              <p className="d-none d-lg-block">
+                We provide you with the design and you choose if you like it or
+                if you want to change the details with our online configurator.
+              </p>
+            </div>
           </div>
         </div>
       </header>
