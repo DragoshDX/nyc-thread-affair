@@ -1,0 +1,39 @@
+.banner-main {
+  background: $gray-secondary url('/images/banners/banner-02.jpg') no-repeat
+    center center / cover;
+  height: 716px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: $white;
+  text-align: center;
+
+  .banner-info {
+    h1 {
+      font-size: 50px;
+      font-weight: bold;
+      line-height: 33px;
+    }
+
+    h2 {
+      font-size: 27px;
+      font-weight: 300;
+      margin-bottom: 50px;
+    }
+  }
+
+  .banner-copy {
+    width: 210px;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 40px 0 70px 0;
+
+    p {
+      span {
+        display: block;
+        font-size: 24px;
+      }
+    }
+  }
+}
