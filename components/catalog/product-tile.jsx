@@ -12,7 +12,7 @@ export default function ProductTile() {
         </div>
 
         <div className="product-tile-badge">
-          <span className="badge badge-font-large">%</span>
+          <span className="badge badge-font-large badge-secondary">%</span>
         </div>
 
         <div className="product-tile-headings">

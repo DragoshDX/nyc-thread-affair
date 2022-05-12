@@ -37,4 +37,16 @@
       }
     }
   }
+
+  .product-tiles {
+    margin-bottom: 50px;
+  }
+
+  .demo-flex {
+    .product-tiles {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
 }

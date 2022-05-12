@@ -53,7 +53,49 @@ export default function Main() {
             </p>
           </header>
 
+          <section className="product-tiles row">
+            <div className="col-12 col-lg-3">
+              <ProductTile></ProductTile>
+            </div>
+
+            <div className="col-12 col-lg-3 offset-lg-1 mt-4 mt-lg-0">
+              <ProductTile></ProductTile>
+            </div>
+
+            <div className="col-12 col-lg-3 offset-lg-1 mt-4 mt-lg-0">
+              <ProductTile></ProductTile>
+            </div>
+          </section>
+
+          <footer>
+            <a href="" title="See more" className="catalog-preview-cta">
+              see more
+            </a>
+          </footer>
+        </section>
+
+        <section className="home-catalog-preview container demo-flex">
+          <header>
+            <h1 className="section-title">
+              <span>Layout</span> Flexbox
+            </h1>
+
+            <p>
+              Accomplish new achievements with a bold new style from the
+              brilliant collection of men’s designer suits.
+            </p>
+            <p>
+              For the finest custom tailored experience, be sure to explore our
+              selection of premium fabrics from one of the world's oldest fabric
+              mills, Vitale Barberis Canonico.
+            </p>
+          </header>
+
           <section className="product-tiles">
+            <ProductTile></ProductTile>
+
+            <ProductTile></ProductTile>
+
             <ProductTile></ProductTile>
           </section>
 
