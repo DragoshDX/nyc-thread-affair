@@ -106,6 +106,76 @@ export default function Main() {
           </footer>
         </section>
 
+        <section className="home-catalog-preview container">
+          <header>
+            <h1 className="section-title">
+              <span>Bootstrap</span> Flex Utilities
+            </h1>
+
+            <p>
+              Accomplish new achievements with a bold new style from the
+              brilliant collection of men’s designer suits.
+            </p>
+            <p>
+              For the finest custom tailored experience, be sure to explore our
+              selection of premium fabrics from one of the world's oldest fabric
+              mills, Vitale Barberis Canonico.
+            </p>
+          </header>
+
+          <section className="product-tiles d-flex flex-column flex-lg-row justify-content-between">
+            <div className="mb-5 mb-lg-0">
+              <ProductTile></ProductTile>
+            </div>
+
+            <div className="mb-5 mb-lg-0">
+              <ProductTile></ProductTile>
+            </div>
+
+            <div>
+              <ProductTile></ProductTile>
+            </div>
+          </section>
+
+          <footer>
+            <a href="" title="See more" className="catalog-preview-cta">
+              see more
+            </a>
+          </footer>
+        </section>
+
+        <section className="home-catalog-preview container demo-grid">
+          <header>
+            <h1 className="section-title">
+              <span>CSS Grid</span> Layout
+            </h1>
+
+            <p>
+              Accomplish new achievements with a bold new style from the
+              brilliant collection of men’s designer suits.
+            </p>
+            <p>
+              For the finest custom tailored experience, be sure to explore our
+              selection of premium fabrics from one of the world's oldest fabric
+              mills, Vitale Barberis Canonico.
+            </p>
+          </header>
+
+          <section className="product-tiles">
+            <ProductTile></ProductTile>
+
+            <ProductTile></ProductTile>
+
+            <ProductTile></ProductTile>
+          </section>
+
+          <footer>
+            <a href="" title="See more" className="catalog-preview-cta">
+              see more
+            </a>
+          </footer>
+        </section>
+
         <HomeNewsletter></HomeNewsletter>
 
         <section className="home-payment container">
