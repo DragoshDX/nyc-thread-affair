@@ -18,9 +18,7 @@ export default function ProductTile() {
         <div className="product-tile-headings">
           <h1>
             <a href="" title="Thread Affair Gingham Suit">
-              <span>Thread Affair</span>
-              <span>Gingham</span>
-              Suit
+              <span>Thread Affair</span> <span>Gingham</span> Suit
             </a>
           </h1>
 
@@ -36,8 +34,7 @@ export default function ProductTile() {
         <div className="product-tile-pricing">
           <span className="product-price-regular">399</span>
           <span className="product-price">
-            USD
-            <span>299</span>
+            USD <span>299</span>
           </span>
         </div>
       </section>
