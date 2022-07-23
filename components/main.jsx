@@ -1,8 +1,24 @@
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 import ProductTile from './catalog/product-tile';
 import HomeCarousel from './homepage/home-carousel';
 import HomeNewsletter from './homepage/home-newsletter';
 
 export default function Main() {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    axios.get('http://localhost:3000/api/products').then((response) => {
+      const { data } = response;
+
+      setProducts(data);
+    });
+  }, []);
+
+  if (products.length <= 0) {
+    return 'loading';
+  }
+
   return (
     <main className="content">
       <header className="content-header">
@@ -58,15 +74,15 @@ export default function Main() {
 
           <section className="product-tiles row">
             <div className="col-12 col-lg-3">
-              <ProductTile></ProductTile>
+              <ProductTile product={products[0]}></ProductTile>
             </div>
 
             <div className="col-12 col-lg-3 offset-lg-1 mt-4 mt-lg-0">
-              <ProductTile></ProductTile>
+              <ProductTile product={products[1]}></ProductTile>
             </div>
 
             <div className="col-12 col-lg-3 offset-lg-1 mt-4 mt-lg-0">
-              <ProductTile></ProductTile>
+              <ProductTile product={products[2]}></ProductTile>
             </div>
           </section>
 
@@ -95,11 +111,11 @@ export default function Main() {
           </header>
 
           <section className="product-tiles">
-            <ProductTile></ProductTile>
+            <ProductTile product={products[3]}></ProductTile>
 
-            <ProductTile></ProductTile>
+            <ProductTile product={products[4]}></ProductTile>
 
-            <ProductTile></ProductTile>
+            <ProductTile product={products[5]}></ProductTile>
           </section>
 
           <footer>
@@ -128,15 +144,15 @@ export default function Main() {
 
           <section className="product-tiles d-flex flex-column flex-lg-row justify-content-between">
             <div className="mb-5 mb-lg-0">
-              <ProductTile></ProductTile>
+              <ProductTile product={products[5]}></ProductTile>
             </div>
 
             <div className="mb-5 mb-lg-0">
-              <ProductTile></ProductTile>
+              <ProductTile product={products[2]}></ProductTile>
             </div>
 
             <div>
-              <ProductTile></ProductTile>
+              <ProductTile product={products[0]}></ProductTile>
             </div>
           </section>
 
@@ -165,11 +181,11 @@ export default function Main() {
           </header>
 
           <section className="product-tiles">
-            <ProductTile></ProductTile>
+            <ProductTile product={products[3]}></ProductTile>
 
-            <ProductTile></ProductTile>
+            <ProductTile product={products[5]}></ProductTile>
 
-            <ProductTile></ProductTile>
+            <ProductTile product={products[2]}></ProductTile>
           </section>
 
           <footer>
